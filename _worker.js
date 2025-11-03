@@ -343,15 +343,5 @@ function handleError(error) {
   });
 }
 
-/**
- * WebSocketPair polyfill for environments that don't support it
- */
-class WebSocketPair {
-  constructor() {
-    // This is a placeholder - Cloudflare Workers runtime provides WebSocketPair
-    // If not available, this will need proper implementation
-    if (typeof WebSocketPair === 'undefined') {
-      throw new Error('WebSocketPair is not supported in this environment');
-    }
-  }
-}
+// Note: WebSocketPair is provided by the Cloudflare Workers runtime
+// No polyfill is needed as this worker is designed to run on Cloudflare Workers only
