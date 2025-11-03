@@ -1,0 +1,33 @@
+{
+  "name": "no-ping-cloudflare-worker",
+  "version": "1.0.0",
+  "description": "The most advanced no-ping Cloudflare Worker with HTTP/HTTPS proxying and WebSocket support",
+  "main": "_worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "deploy:staging": "wrangler deploy --env staging",
+    "deploy:production": "wrangler deploy --env production",
+    "tail": "wrangler tail",
+    "test": "wrangler dev --test"
+  },
+  "keywords": [
+    "cloudflare",
+    "worker",
+    "proxy",
+    "websocket",
+    "no-ping",
+    "stealth",
+    "cors",
+    "http-proxy",
+    "ws-proxy"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
