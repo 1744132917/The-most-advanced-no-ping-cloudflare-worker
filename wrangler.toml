@@ -1,0 +1,21 @@
+name = "no-ping-worker"
+main = "_worker.js"
+compatibility_date = "2024-11-01"
+
+# Account ID and Workers.dev subdomain
+# Uncomment and configure these for deployment:
+# account_id = "your-account-id"
+# workers_dev = true
+
+# Route configuration for custom domains
+# Uncomment and configure for production:
+# routes = [
+#   { pattern = "example.com/*", zone_name = "example.com" }
+# ]
+
+# Environment variables
+[env.production]
+name = "no-ping-worker-production"
+
+[env.staging]
+name = "no-ping-worker-staging"
